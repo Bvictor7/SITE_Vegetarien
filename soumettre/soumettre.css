@@ -1,0 +1,296 @@
+/* Styles de base pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5DC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Navbar */
+header.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #4caf50, #2e7d32);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Logo */
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #F5F5DC;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #333333;
+}
+
+body.dark-mode button {
+    background: linear-gradient(to right, #4caf50, #2e7d32);
+    color: #F5F5DC;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Texte avec des couleurs spécifiques */
+.green {
+    color: #32cd32;
+}
+
+.brown {
+    color: #8b4513;
+}
+
+/* Liens de la navbar */
+.nav-left a {
+    color: #F5F5DC;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Menu hamburger à droite */
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Icône hamburger */
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 100%;
+    height: 4px;
+    background-color: #F5F5DC;
+    margin: 6px 0;
+}
+
+/* Menu mobile */
+.mobile-menu {
+    display: none;
+    background-color: #F5F5DC;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu ul li {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #8b4513;
+}
+
+.mobile-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.mobile-menu ul li a {
+    color: #8b4513;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+
+/* Formulaire de soumission */
+.form-section {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Contenu du formulaire */
+.recipe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;  /* Aligne les éléments du formulaire à l'intérieur */
+}
+
+/* Groupe de champs */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style des champs de texte, textareas et fichiers */
+input[type="text"],
+textarea,
+input[type="file"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical; /* Permet la redimension de la textarea en hauteur */
+}
+
+/* Style du bouton de soumission */
+button.submit-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+    width: auto;
+    min-width: 200px;
+}
+
+button.submit-btn:hover {
+    background-color: #32cd32;
+}
+
+/* Media Queries pour les petits écrans */
+@media (max-width: 768px) {
+    .form-section {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    /* Formulaire prend plus de place sur petit écran */
+    .recipe-form {
+        gap: 15px;
+    }
+
+    /* Bouton s'étend à toute la largeur sur mobile */
+    button.submit-btn {
+        width: 100%;
+    }
+}
+
+/* Pied de page */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer {
+    background: linear-gradient(to right, #4caf50, #2e7d32);
+    color: #F5F5DC;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer a {
+    color: #a1c181;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons i {
+    margin: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Media Queries pour le Responsive Design */
+@media (max-width: 768px) {
+    header.navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-left a {
+        font-size: 20px;
+    }
+
+    .ingredient-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentation,
+    .ingredients,
+    .etapes {
+        padding: 15px;
+    }
+
+    .main-image {
+        max-height: 40vh;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+}
+
+/* Style pour le bouton Go to Top */
+.go-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50; /* Vert */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none; /* Par défaut, caché */
+}
+
+.go-to-top:hover {
+    background-color: #32cd32;
+}

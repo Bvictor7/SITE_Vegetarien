@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../soumettre/soumettre.css">
+    <title>Soumettre une recette</title>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="nav-left">
+            <a href="../accueil/index.html">
+                <img id="logo" src="../Asset/images/logoVert.png" style="width: 100px; height: auto;" alt="Logo">
+            </a>
+
+            <button id="dark-mode">Dark mode</button>
+            <script src="../accueil/darkButton.js"></script>
+        </div>
+
+        <a href="../accueil/index.html">
+            <h1><span class="green">Green</span><span class="brown">Bite</span></h1>
+        </a>
+
+        <div class="nav-right">
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+
+        <nav class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li><a href="../accueil/index.html">Accueil</a></li>
+                <li><a href="../recettes/recette.html">Recette</a></li>
+            </ul>
+        </nav>
+        <script src="../accueil/navMenu.js"></script>
+
+    </header>
+
+    <main>
+        <h2>Soumettre votre recette</h2>
+
+        <!-- Formulaire de soumission de recette -->
+        <section class="form-section">
+            <form action="/soumettre" method="POST" class="recipe-form">
+
+                <div class="form-group">
+                    <label for="recipe-name">Nom de la recette :</label>
+                    <input type="text" id="recipe-name" name="recipe-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="recipe-description">Description :</label>
+                    <textarea id="recipe-description" name="recipe-description" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="ingredients">Ingrédients (séparés par des virgules) :</label>
+                    <input type="text" id="ingredients" name="ingredients" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="steps">Étapes de la recette :</label>
+                    <textarea id="steps" name="steps" rows="6" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="recipe-image">Image de la recette :</label>
+                    <input type="file" id="recipe-image" name="recipe-image" accept="image/*">
+                </div>
+
+                <button type="submit" class="submit-btn">Soumettre la recette</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div>
+            <p>Get connected with us on social networks:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" title="Facebook">
+                    <img src="../Asset/icons/facebook.png" alt="Facebook"
+                        style="width: 24px; height: 24px; vertical-align: middle;">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                    <img src="../Asset/icons/instagram.png" alt="Instagram"
+                        style="width: 24px; height: 24px; vertical-align: middle;">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" title="Twitter">
+                    <img src="../Asset/icons/twitter.png" alt="Twitter"
+                        style="width: 24px; height: 24px; vertical-align: middle;">
+                </a>
+                <a href="https://www.youtube.com" target="_blank" title="YouTube">
+                    <img src="../Asset/icons/youtube.png" alt="YouTube"
+                        style="width: 24px; height: 24px; vertical-align: middle;">
+                </a>
+                <a href="https://www.pinterest.com" target="_blank" title="Pinterest">
+                    <img src="../Asset/icons/logo-pinterest.png" alt="Pinterest"
+                        style="width: 24px; height: 24px; vertical-align: middle;">
+                </a>
+
+            </div>
+        </div>
+        <div>
+            <p>&copy; 2024 Copyright: GreenBite.com</p>
+        </div>
+        <button id="goToTopBtn" class="go-to-top" title="Go to Top">↑</button>
+    </footer>
+
+
+</body>
+<!-- Inclure le fichier JavaScript -->
+<script src="../accueil/buttonTopFooter.js"></script>
+
+</html>
