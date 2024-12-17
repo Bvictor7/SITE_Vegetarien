@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="accueil.css">
+    <link rel="stylesheet" href="./Asset/css/accueil.css">
     <title>Document</title>
 </head>
 
@@ -13,17 +13,17 @@
     <header class="navbar">
         <div class="nav-left">
             <!-- Lien du logo -->
-            <a href="../accueil/index.html">
+            <a href="./index.html">
                 <img id="logo" src="../Asset/images/logoVert.png" style="width: 100px; height: auto;" alt="Logo">
             </a>
 
             <!-- Dark button -->
             <button id="dark-mode">Dark mode</button>
-            <script src="darkButton.js"></script>
+            <script src="./Asset/js/darkButton.js"></script>
 
         </div>
 
-        <a href="../accueil/index.html">
+        <a href="./index.html">
             <h1><span class="green">Green</span><span class="brown">Bite</span></h1>
         </a>
 
@@ -39,28 +39,31 @@
         <!-- Menu déroulant hamburger -->
         <nav class="mobile-menu" id="mobile-menu">
             <ul>
-                <li><a href="../recettes/recette.html">Recettes</a></li>
-                <li><a href="../soumettre/soumettre.html">Soumettre</a></li>
+                <li><a href="./recettes/recette.html">Recettes</a></li>
+                <li><a href="./soumettre/soumettre.html">Soumettre</a></li>
             </ul>
         </nav>
-        <script src="navMenu.js"></script>
+        <script src="./Asset/js/navMenu.js"></script>
 
     </header>
 
     <img src="../Asset/images/platVégie2.jpg" alt="Plat principal" class="main-image"
-        onclick="location.href='../recettes/recette.html'">
+        onclick="location.href='./recettes/recette.html'">
 
     <!-- Champ de recherche -->
     <div class="search-container">
         <input type="text" id="searchInput" placeholder="Rechercher une recette..." onkeyup="searchRecipes()">
+        <!-- Nouveau bouton à droite -->
+        <button id="searchButton" onclick="location.href='./recettes/recette.html'">Rechercher</button>
     </div>
+
 
     <section class="section">
         <h2 class="section-title">Tendance gourmandes</h2>
         <div class="recipe-list" id="recipe-list">
             <div class="recipe-item">
                 <img src="../Asset/images/platVégie1.jpg" alt="Recette 1"
-                    onclick="location.href='../recettes/recette.html'">
+                    onclick="location.href='./recettes/recette.html'">
                 <div class="info">
                     <h3 class="recipe-name">Recette de fêtes</h3>
                     <p class="recipe-description">Le Lorem Ipsum est simplement du faux texte employé dans la
@@ -68,7 +71,7 @@
                 </div>
             </div>
             <div class="recipe-item">
-                <img src="../Asset/images/tofu.jpg" alt="Recette 2" onclick="location.href='../recettes/recette.html'">
+                <img src="../Asset/images/tofu.jpg" alt="Recette 2" onclick="location.href='./recettes/recette.html'">
                 <div class="info">
                     <h3 class="recipe-name">Recette de fêtes</h3>
                     <p class="recipe-description">Le Lorem Ipsum est simplement du faux texte employé dans la
@@ -77,7 +80,7 @@
             </div>
             <div class="recipe-item">
                 <img src="../Asset/images/rctSaison5.avif" alt="Recette 3"
-                    onclick="location.href='../recettes/recette.html'">
+                    onclick="location.href='./recettes/recette.html'">
                 <div class="info">
                     <h3 class="recipe-name">Recette de fêtes</h3>
                     <p class="recipe-description">Le Lorem Ipsum est simplement du faux texte employé dans la
@@ -92,45 +95,45 @@
         <div class="carousel">
             <div class="carousel-container">
                 <img src="../Asset/images/rctSaison1.jpg" alt="Recette 1"
-                    onclick="location.href='../recettes/recette.html'">
+                    onclick="location.href='./recettes/recette.html'">
                 <img src="../Asset/images/rctSaison2.jpg" alt="Recette 2"
-                    onclick="location.href='../recettes/recette.html'">
+                    onclick="location.href='./recettes/recette.html'">
                 <img src="../Asset/images/rctSaison3.jpg" alt="Recette 3"
-                    onclick="location.href='../recettes/recette.html'">
+                    onclick="location.href='./recettes/recette.html'">
                 <img src="../Asset/images/rctSaison1.jpg" alt="Recette 1"
-                    onclick="location.href='../recettes/recette.html'">
+                    onclick="location.href='./recettes/recette.html'">
                 <img src="../Asset/images/rctSaison2.jpg" alt="Recette 2"
-                    onclick="location.href='../recettes/recette.html'">
+                    onclick="location.href='./recettes/recette.html'">
                 <img src="../Asset/images/rctSaison3.jpg" alt="Recette 3"
-                    onclick="location.href='../recettes/recette.html'">
+                    onclick="location.href='./recettes/recette.html'">
             </div>
             <div class="carousel-buttons">
                 <button id="prev">&#10094;</button>
                 <button id="next">&#10095;</button>
             </div>
         </div>
-        <script src="carousel.js"></script>
+        <script src="./Asset/js/carousel.js"></script>
     </section>
 
     <section class="section season-recipes">
         <h2 class="section-title">Recettes de saisons</h2>
         <div class="recettes-container">
             <div class="recette-card">
-                <a href="../recettes/recette.html">
+                <a href="./recettes/recette.html">
                     <img src="../Asset/images/rctSaison4.jpg" alt="Hachis Parmentier">
                     <h3>Plat 1</h3>
                     <p>⭐⭐⭐⭐⭐ 4.8/5 (1009 avis)</p>
                 </a>
             </div>
             <div class="recette-card">
-                <a href="../recettes/recette.html">
+                <a href="./recettes/recette.html">
                     <img src="../Asset/images/rctSaison4.jpg" alt="Hachis Parmentier">
                     <h3>Plat 1</h3>
                     <p>⭐⭐⭐⭐⭐ 4.8/5 (1009 avis)</p>
                 </a>
             </div>
             <div class="recette-card">
-                <a href="../recettes/recette.html">
+                <a href="./recettes/recette.html">
                     <img src="../Asset/images/rctSaison4.jpg" alt="Hachis Parmentier">
                     <h3>Plat 1</h3>
                     <p>⭐⭐⭐⭐⭐ 4.8/5 (1009 avis)</p>
@@ -172,9 +175,9 @@
     </footer>
 
     <!-- Inclure le fichier JavaScript -->
-    <script src="buttonTopFooter.js"></script>
-    <script src="accueil.js"></script> <!-- Lien vers le fichier JavaScript -->
-    <script src="accueil.js"></script> <!-- Lien vers le fichier JavaScript de recherche -->
+    <script src="./Asset/js/buttonTopFooter.js"></script>
+    <script src="./Asset/js/accueil.js"></script> <!-- Lien vers le fichier JavaScript -->
+    <script src="./Asset/js/accueil.js"></script> <!-- Lien vers le fichier JavaScript de recherche -->
 
 </body>
 

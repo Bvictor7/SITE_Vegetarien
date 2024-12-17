@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../soumettre/soumettre.css">
+    <link rel="stylesheet" href="../Asset/css/soumettre.css">
     <title>Soumettre une recette</title>
 </head>
 
@@ -12,15 +12,15 @@
 
     <header class="navbar">
         <div class="nav-left">
-            <a href="../accueil/index.html">
+            <a href="../index.html">
                 <img id="logo" src="../Asset/images/logoVert.png" style="width: 100px; height: auto;" alt="Logo">
             </a>
 
             <button id="dark-mode">Dark mode</button>
-            <script src="../accueil/darkButton.js"></script>
+            <script src="../Asset/js/buttonTopFooter.js"></script>
         </div>
 
-        <a href="../accueil/index.html">
+        <a href="../index.html">
             <h1><span class="green">Green</span><span class="brown">Bite</span></h1>
         </a>
 
@@ -34,11 +34,11 @@
 
         <nav class="mobile-menu" id="mobile-menu">
             <ul>
-                <li><a href="../accueil/index.html">Accueil</a></li>
+                <li><a href="../index.html">Accueil</a></li>
                 <li><a href="../recettes/recette.html">Recette</a></li>
             </ul>
         </nav>
-        <script src="../accueil/navMenu.js"></script>
+        <script src="../Asset/js/navMenu.js"></script>
 
     </header>
 
@@ -47,7 +47,7 @@
 
         <!-- Formulaire de soumission de recette -->
         <section class="form-section">
-            <form action="/soumettre" method="POST" class="recipe-form">
+            <form id="submitForm" action="http://localhost:3000/soumettre" method="POST">
 
                 <div class="form-group">
                     <label for="recipe-name">Nom de la recette :</label>
@@ -76,6 +76,8 @@
 
                 <button type="submit" class="submit-btn">Soumettre la recette</button>
             </form>
+        </section>
+
         </section>
     </main>
     <footer class="footer">
@@ -114,6 +116,6 @@
 
 </body>
 <!-- Inclure le fichier JavaScript -->
-<script src="../accueil/buttonTopFooter.js"></script>
+<script src="../Asset/js/buttonTopFooter.js"></script>
 
 </html>
